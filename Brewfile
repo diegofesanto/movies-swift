@@ -1,0 +1,5 @@
+brew 'sourcery'
+brew 'mint'
+brew 'xcodegen'
+brew 'swiftlint'
+brew 'carthage'

@@ -1,0 +1,43 @@
+name: Movies
+options:
+  bundleIdPrefix: com.diegofesanto
+targets:
+  Movies:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: [Sources]
+
+    info:
+      path: Sources/Ui/Info.plist
+      properties:
+        CFBundleShortVersionString: "1.0"
+
+    preBuildScripts:
+      - path: scripts/build_phases/swiftgen.sh
+        name: Swiftgen
+      - path: scripts/build_phases/swiftymocky.sh
+        name: Swifty Mocky
+      - path: scripts/build_phases/swiftlint.sh
+        name: Swiftlint
+
+    scheme:
+      testTargets:
+        - MoviesTests
+      gatherCoverageData: true
+
+    dependencies:
+      - carthage: RxSwift
+      - carthage: TinyConstraints
+      - carthage: Realm
+
+  MoviesTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [Tests]
+
+    dependencies:
+      - target: Movies
+      - carthage: SwiftyMocky
+      - carthage: RxSwift
+   

@@ -1,0 +1,4 @@
+github "MakeAWishFoundation/SwiftyMocky" "3.5.0"
+github "ReactiveX/RxSwift" "5.0.1"
+github "realm/realm-cocoa" "v4.3.2"
+github "roberthein/TinyConstraints" "4.0.1"
