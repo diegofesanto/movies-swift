@@ -20,9 +20,9 @@ Essa camada ficará responsável por intermediar a comunicasção da View com a 
 ### Ferramentas
 
 - [Carthage](https://github.com/Carthage/Carthage) para gerenciamento de dependências
+- [Xcodegen](https://github.com/yonaskolb/XcodeGen) para gerar o arquivo .xcproject
 - [Fastlane](https://fastlane.tools) para automatização de fluxos
 - [swift-format](https://github.com/google/swift/tree/format) para manter uma formatação consistente no projeto
 - [Swiftgen](https://github.com/SwiftGen/SwiftGen) para gerar código para acessarmos Assets/Colors/Strings de forma tipáda.
 - [SwiftyMocky](https://github.com/MakeAWishFoundation/SwiftyMocky) para geração de Mocks pra utilizarmos nos testes.
 - [Slather](https://github.com/SlatherOrg/slather) para análise da cobertura de código.
-- [Xcodegen](https://github.com/yonaskolb/XcodeGen) para gerar o arquivo .xcproject
