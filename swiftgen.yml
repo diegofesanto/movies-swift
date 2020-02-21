@@ -1,0 +1,5 @@
+strings:
+    inputs: Sources/UI/Localizable.strings
+    outputs:
+        - templateName: structured-swift4
+          output: Sources/Generated/Localizable.generated.swift

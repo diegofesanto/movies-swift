@@ -18,8 +18,6 @@ targets:
         name: Swiftgen
       - path: scripts/build_phases/swiftymocky.sh
         name: Swifty Mocky
-      - path: scripts/build_phases/swiftlint.sh
-        name: Swiftlint
 
     scheme:
       testTargets:
@@ -27,9 +25,12 @@ targets:
       gatherCoverageData: true
 
     dependencies:
-      - carthage: RxSwift
-      - carthage: TinyConstraints
+      - carthage: RealmSwift
       - carthage: Realm
+      - carthage: RxSwift
+      - carthage: RxCocoa
+      - carthage: RxRelay
+      - carthage: TinyConstraints
 
   MoviesTests:
     type: bundle.unit-test

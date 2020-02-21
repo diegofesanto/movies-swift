@@ -1,0 +1,13 @@
+sourceryCommand: null
+MoviesTests:
+  sources:
+    include:
+    - ./Sources
+  output: ./Tests/Helpers/Mocks/Mock.generated.swift
+  targets:
+  - MoviesTests
+  testable:
+  - Movies
+  import:
+  - Foundation
+  - RxSwift
